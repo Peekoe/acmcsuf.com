@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
   import type { LoadInput, LoadOutput } from '@sveltejs/kit/types/internal';
+
   export async function load({ fetch }: LoadInput): Promise<LoadOutput> {
     const response = await fetch(`/events.json`);
     return { props: { events: await response.json() } };
@@ -12,6 +13,7 @@
   import Spacing from '$lib/components/sections/spacing.svelte';
   import EventCarousel from '$lib/components/events/event-list.svelte';
   import AcmEmpty from '$lib/components/utils/acm-empty.svelte';
+
   export let events: AcmEvent[] = [];
 </script>
 
@@ -55,6 +57,7 @@
     justify-content: center;
     text-align: center;
   }
+
   p {
     text-align: center;
   }
