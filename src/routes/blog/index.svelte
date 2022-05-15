@@ -21,7 +21,7 @@
 <Spacing --min="175px" --med="200px" --max="200px" />
 
 <section>
-  <img src="assets/readme-logomark.svg" alt="README by acmCSUF" />
+  <img src="/assets/readme-logomark.svg" alt="README by acmCSUF" />
 
   <h2 class="subtitle headers">
     The official acmCSUF blog.<a href="/blog.xml"
